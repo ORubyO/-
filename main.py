@@ -20,7 +20,7 @@ with open(os.path.join("extensions.txt"), 'r') as f:
 # 一開始準備就緒時會觸發
 @bot.event
 async def on_ready():
-    ch = bot.get_channel(992297511932936266)
+    ch = bot.get_channel("輸入機器人要加入的頻道ID")
     await ch.send('online')
     print("Ready!")
     # 印出 bot 這個 user 的資訊
